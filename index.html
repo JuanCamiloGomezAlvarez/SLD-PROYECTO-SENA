@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="atras"><a href="#">SLD</a></div>
+    <nav class="nav-container" aria-label="Navegacion principal">
+      <div class="icon" id="barras-menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="div-ul" id="ul">
+        <ul class="nav-ul">
+          <li><a href="#" data-target="Agendar" onclick="myFunction(this)">Agendar</a></li>
+          <li><a href="#" data-target="Agregar" onclick="myFunction(this)">Agregar</a></li>
+          <li><a href="#" data-target="Base de datos" onclick="myFunction(this)">Base de datos</a></li>
+          <li><a href="#" data-target="Mensajeria" onclick="myFunction(this)">Mensajeria</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="login">
+      <h1>SLD</h1>
+      <P>Servicio de limpieza a domicilio</P>
+      <form class="formulario" action="action" method="post">
+        
+        <div class="container">
+          <label for="mail"><b>Correo electronico</b></label>
+          <input type="email" placeholder="Ingresa tu Correo" name="mail" required>
+
+          <label for="psw"><b>Contraseña</b></label>
+          <input type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Recuerdame
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancelar</button>
+          <span class="psw">Olvide la <a href="#">contraseña?</a></span>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

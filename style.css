@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    text-shadow: 4px 4px 12px rgb(104, 211, 114);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 320px) {
+  body {
+    background-color: #bfcddb;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  header {
+    overflow: hidden;
+    position: fixed;
+    background-color: #747c84;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px 0px;
+    z-index: 20;
+    height: 75px;
+  }
+
+  .atras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: azure;
+    border-radius: 50%;
+    align-self: center;
+  }
+
+  .atras a {
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(73, 154, 211);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .nav-container {
+    position: static;
+  }
+
+  .icon {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 2.7rem;
+    padding: 0;
+    height: 100%;
+    margin-right: 35px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(73, 154, 211);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .icon:hover .bar1 .bar2 .bar3 {
+    background-color: rgb(104, 211, 114);
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .nav-ul {
+    position: fixed;
+    width: 50%;
+    right: 0%;
+    margin-top: -30px;
+    text-align: center;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #747c84;
+    list-style-type: none;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px 0px;
+  }
+
+  .nav-container ul li a {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+
+  .nav-container ul li a:hover {
+    cursor: pointer;
+    background-color: rgb(73, 154, 211);
+  }
+
+  .div-ul {
+    display: none;
+  }
+
+  .header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .login {
+    display: flex;
+    width: 360px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: center;
+    background-color: azure;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px 0px;
+  }
+
+  h1 {
+    font-size: 2.7em;
+    font-weight: bold;
+    color: rgb(73, 154, 211);
+  }
+
+  p {
+    color: rgb(73, 154, 211);
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+  }
+
+  form {
+    border: 3px solid #f1f1f1;
+  }
+
+  label{
+    color:rgb(73, 154, 211);
+  }
+
+  
+  input[type=Email],
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: 880px) {
+
+  .icon {
+    display: none
+  }
+
+  #ul {
+    display: flex;
+  }
+
+  .nav-ul {
+    position: relative;
+    width: 100%;
+    right: 0%;
+    align-items: center;
+    margin-top: 15px;
+    text-align: center;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    box-shadow: none
+  }
+
+  .nav-container ul li a {
+    height: 40px;
+    padding: 5px 10px;
+  }
+
+  .nav-ul:last-child {
+    margin-right: 30px;
+  }
+}
