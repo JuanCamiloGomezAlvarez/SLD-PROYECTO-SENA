@@ -34,7 +34,7 @@
   header {
     overflow: hidden;
     position: fixed;
-    background-color: #747c84;
+    background-color: #9fb0c0;
     display: flex;
     width: 100vw;
     justify-content: space-between;
@@ -225,8 +225,9 @@
     width: 100%;
   }
 
-  .a-login{
+  .a-botones{
     display: block;
+    color: white;
   }
   
   button:hover {
@@ -271,7 +272,9 @@
     flex-direction: row;
     text-decoration: none;
     list-style-type: none;
-    box-shadow: none
+    box-shadow: none;
+    background-color: #9fb0c0;
+    
   }
 
   .nav-container ul li a {
