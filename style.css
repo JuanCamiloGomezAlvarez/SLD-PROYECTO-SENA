@@ -176,6 +176,12 @@
     font-weight: bold;
     color: rgb(73, 154, 211);
   }
+  
+  h2{
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(73, 154, 211);
+  }
 
   p {
     color: rgb(73, 154, 211);
@@ -219,6 +225,9 @@
     width: 100%;
   }
 
+  .a-login{
+    display: block;
+  }
   
   button:hover {
     opacity: 0.8;
