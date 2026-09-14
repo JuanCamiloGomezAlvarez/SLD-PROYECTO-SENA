@@ -32,9 +32,6 @@ nav.addEventListener("click", (e) => {
     if (seccionActiva) {
       seccionActiva.classList.remove("oculto");
     }
-
-    
-
     // me lleva al inicio de la pagina
     seccionActiva.scrollIntoView({ behavior: "smooth", block: "start" });
     barras.classList.toggle('change')

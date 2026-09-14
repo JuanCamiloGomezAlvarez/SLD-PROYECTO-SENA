@@ -154,8 +154,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
+    padding: 120px 0px;
   }
+
+  /* .form-agregar {
+    margin-top: 100px;
+    height: auto;
+  } */
 
   .login {
     display: flex;
@@ -169,6 +175,7 @@
     background-color: azure;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px 0px;
+    text-align: center;
   }
 
   h1 {
@@ -176,8 +183,8 @@
     font-weight: bold;
     color: rgb(73, 154, 211);
   }
-  
-  h2{
+
+  h2 {
     font-size: 1.7em;
     font-weight: bold;
     color: rgb(73, 154, 211);
@@ -199,13 +206,27 @@
     border: 3px solid #f1f1f1;
   }
 
-  label{
-    color:rgb(73, 154, 211);
+  form fieldset {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 15px;
+    border: none;
+    margin-bottom: 10px;
   }
 
-  
+
+
+  label {
+    color: rgb(73, 154, 211);
+  }
+
+
   input[type=Email],
-  input[type=password] {
+  input[type=password],
+  input[type=text],
+  input[type=number],
+  input[type=tel] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -214,7 +235,7 @@
     box-sizing: border-box;
   }
 
-  
+
   button {
     background-color: #04AA6D;
     color: white;
@@ -225,11 +246,11 @@
     width: 100%;
   }
 
-  .a-botones{
+  .a-botones {
     display: block;
     color: white;
   }
-  
+
   button:hover {
     opacity: 0.8;
   }
@@ -274,7 +295,7 @@
     list-style-type: none;
     box-shadow: none;
     background-color: #9fb0c0;
-    
+
   }
 
   .nav-container ul li a {

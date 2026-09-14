@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu principal</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
@@ -18,26 +20,60 @@
       </div>
       <div class="div-ul" id="ul">
         <ul class="nav-ul">
-          <li><a href="#" data-target="Agendar" onclick="myFunction(this)">Agendar</a></li>
-          <li><a href="#" data-target="Agregar" onclick="myFunction(this)">Agregar</a></li>
-          <li><a href="#" data-target="Base de datos" onclick="myFunction(this)">Base de datos</a></li>
-          <li><a href="#" data-target="Mensajeria" onclick="myFunction(this)">Mensajeria</a></li>
+          <li><a href="/menu.html" >Inicio</a></li>
+          <li><a href="#" >Agendar</a></li>
+          <li><a href="/agregar.html" >Agregar</a></li>
+          <li><a href="#" >Base de datos</a></li>
+          <li><a href="#" >Mensajeria</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main class="form-agregar">
     <section class="login">
       <h1>SLD</h1>
       <!-- <P>Servicio de limpieza a domicilio</P> -->
-      <h2>Agregar</h2>
+      <h2>Agregar nuevo Usuario</h2>
+      <p>Aqui puedes agregar nuevos trabajadores y clientes a tu base de datos.</p>
+      <form class="formulario" action="" method="get">
+        <div class="container">
+          <label for="name"><b>Nombre</b></label>
+          <input type="text" placeholder="Ingresa el nombre" name="name" required>
+
+          <label for="lastName"><b>Apellido</b></label>
+          <input type="text" placeholder="Ingresa el apellido" name="lastName" required>
+
+          <label for="mail"><b>Correo</b></label>
+          <input type="email" placeholder="ejemplo@mail.com" name="mail" required>
+
+          <label for="phone"><b>Telefono</b></label>
+          <input type="tel" placeholder="ingresa el telefono" name="phone" required>
+
+          <label for="adress"><b>direccion</b></label>
+          <input type="text" placeholder="Ingresa la direccion" name="adress" required>
+
+          <fieldset>
+            <legend style="margin-bottom: 10px;">Elige una opción:</legend>
+            <label>
+              <input type="radio" name="opcion" value="opcion-1" required>
+              Nuevo Trabajador
+            </label>
+            <label>
+              <input type="radio" name="opcion" value="opcion-2" required>
+              Nuevo Cliente
+            </label>
+          </fieldset>
+
+          <button type="submit"><a class="a-botones" href="">Agregar</a></button>
+
+      </form>
       <div class="menu-botones">
-        <button><a class="a-botones" href="">Nuevo trabajador</a></button>
-        <button><a class="a-botones" href="">Nuevo cliente</a></button>
+        <button><a class="a-botones" href="">Gestionar Base de datos</a></button>
       </div>
     </section>
   </main>
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
