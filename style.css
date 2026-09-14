@@ -31,6 +31,10 @@
     text-decoration: none;
   }
 
+  /* PROFE EN LAS IMAGENES DEL DOCUMENTO NO VOY A PONER TODO EL CSS PORQUE ES BASTANTE 
+     PERO LO PUEDE VISUALISAR EN GITHUB
+  */
+
   header {
     overflow: hidden;
     position: fixed;
