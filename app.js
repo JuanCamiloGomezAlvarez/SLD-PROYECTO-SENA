@@ -36,3 +36,8 @@ nav.addEventListener("click", (e) => {
     seccionActiva.scrollIntoView({ behavior: "smooth", block: "start" });
     barras.classList.toggle('change')
   });
+
+  function bdEnDesarrollo(x){
+    console.log("hi")
+    return alert("La base de datos esta en desarrollo ")
+  }

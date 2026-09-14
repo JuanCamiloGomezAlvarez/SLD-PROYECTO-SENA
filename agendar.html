@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu principal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="atras"><a href="index.html">SLD</a></div>
+    <nav class="nav-container" aria-label="Navegacion principal">
+      <div class="icon" id="barras-menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="div-ul" id="ul">
+        <ul class="nav-ul">
+          <li><a href="menu.html" >Inicio</a></li>
+          <li><a href="agendar.html" >Agendar</a></li>
+          <li><a href="agregar.html" >Agregar</a></li>
+          <li><a href="#" onclick="bdEnDesarrollo(this)">Base de datos</a></li>
+          <li><a href="mensajes.html" >Mensajeria</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="form-agregar">
+    <section class="login">
+      <h1>SLD</h1>
+      <!-- <P>Servicio de limpieza a domicilio</P> -->
+      <h2>Agendar cita</h2>
+      <p>Genera un nuevo encuentro.</p>
+      <form class="formulario" action="" method="get">
+        <div class="container">
+          <label for="trabajadores"><b>Trabajador</b></label>
+          <select name="trabajadores" id="trabajadores">
+            <option value="1">Selecciona un trabajador</option>
+            <option value="2">Camilo</option>
+            <option value="3">Brenda</option>
+            <option value="4">Juan</option>
+          </select>
+
+          <label for="Clientes"><b>Cliente</b></label>
+          <select name="Clientes" id="clientes" required>
+            <option value="1">Selecciona un cliente</option>
+            <option value="2">Diana</option>
+            <option value="3">Pedro</option>
+            <option value="4">Carlos</option>
+          </select>
+
+          <label for="time"><b>Horario</b></label>
+          <input type="time"  name="time" required>
+
+          <label for="date"><b>Fecha</b></label>
+          <input type="date"  name="date" required>
+
+          <label for="number"><b>Cantidad horas</b></label>
+          <input type="number" placeholder="elige el numero de horas" name="number" required>
+
+          <button type="submit"><a class="a-botones" href="">Agendar</a></button>
+
+      </form>
+      <div class="menu-botones">
+        <button><a class="a-botones" href="mensajes.html">Mensajeria</a></button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>

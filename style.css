@@ -226,7 +226,11 @@
   input[type=password],
   input[type=text],
   input[type=number],
-  input[type=tel] {
+  input[type=tel],
+  input[type=time],
+  input[type=date],
+  textarea,
+  select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -235,6 +239,11 @@
     box-sizing: border-box;
   }
 
+  textarea{
+    width: 260px;
+    height: 120px;
+    resize: none;
+  }
 
   button {
     background-color: #04AA6D;
